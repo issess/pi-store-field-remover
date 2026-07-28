@@ -1,4 +1,4 @@
-# no-store Extension
+# pi-store-field-remover Extension
 
 > **pi agent extension** that removes the `"store": false` field from provider request payloads.
 
@@ -10,12 +10,12 @@ Some proxy/gateway servers or custom (OpenAI-compatible) servers do not support 
 
 ## Installation
 
-Place the `no-store.ts` file in the `.pi/extensions/` directory at the project root, and pi will automatically load it.
+Place the `pi-store-field-remover.ts` file in the `.pi/extensions/` directory at the project root, and pi will automatically load it.
 
 ```
 .pi/
 └── extensions/
-    └── no-store.ts
+    └── pi-store-field-remover.ts
 ```
 
 ## How It Works

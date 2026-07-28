@@ -1,7 +1,7 @@
 import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
 
 /**
- * no-store extension
+ * pi-store-field-remover extension
  * ------------------
  * Removes the `"store": false` field from the request body
  * when the pi agent sends requests to a provider (LLM API).
@@ -11,7 +11,7 @@ import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
  * This extension deletes the field right before sending so that
  * `store` is never included in the request.
  *
- * Location: project local `.pi/extensions/no-store.ts` (auto-loaded)
+ * Location: project local `.pi/extensions/pi-store-field-remover.ts` (auto-loaded)
  */
 export default function (pi: ExtensionAPI) {
   pi.on("before_provider_request", (event, ctx) => {
